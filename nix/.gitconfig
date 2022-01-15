@@ -1,0 +1,16 @@
+[user]
+	name = Life is Plastic
+	email = its@fan.tastic
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --oneline --decorate --color
+	tr = lg --graph
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
