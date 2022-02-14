@@ -12,7 +12,7 @@ alias p='python3'
 did() {
 	local fp=~/did.txt
 	if (( $# == 0 )); then
-		vim $fp
+		cat $fp
 	else
 		echo "[$(date +%F)] $*" | tee -a $fp
 	fi
