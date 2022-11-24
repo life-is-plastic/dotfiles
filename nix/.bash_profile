@@ -1,6 +1,6 @@
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
-	exit 0
+	return
 fi
 
 export PS1='\u@\h:\w$ '

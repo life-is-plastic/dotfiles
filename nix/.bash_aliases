@@ -1,13 +1,16 @@
 alias reload='. ~/.bash_profile'
-alias profile='vim ~/.bash_profile'
-alias aliases='vim ~/.bash_aliases'
+alias profile='vi ~/.bash_profile'
+alias aliases='vi ~/.bash_aliases'
 
-alias gitconfig='vim ~/.gitconfig'
-alias vimrc='vim ~/.vimrc'
-
+alias ls='ls -l --group-directories-first --color=auto'
 alias rm='rm -i'
+
 alias g='git'
-alias p='python3'
+alias gitconfig='vi ~/.gitconfig'
+
+rc() {
+	vi ~/.${1}rc
+}
 
 did() {
 	local fp=~/did.txt
