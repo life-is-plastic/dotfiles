@@ -1,6 +1,3 @@
-## OS color
-`#544073`
-
 ## Custom date format
 1. Control Panel
 1. Region
