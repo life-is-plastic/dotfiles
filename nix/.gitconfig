@@ -10,6 +10,7 @@
 	tr = lg --graph
 [core]
 	editor = vim
+	autocrlf = true
 [init]
 	defaultBranch = main
 [pull]
