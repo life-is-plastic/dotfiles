@@ -14,4 +14,4 @@
 https://stackoverflow.com/a/65192064
 
 ## Mp3tag format string
-`%artist% - $if($eql(%album%,),NO ALBUM,$replace(%album%, /,) - %discnumber%-$num(%track%,2)) - %title%`
+`%artist% - $if($or($eql(%album%,),$eql(%album%,NO ALBUM)),NO ALBUM,$replace(%album%,/,) - %discnumber%-$num(%track%,2)) - %title%`
