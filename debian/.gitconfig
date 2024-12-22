@@ -8,6 +8,7 @@
 	br = branch
 	lg = log --oneline --decorate --color
 	tr = lg --graph
+	diff1 = diff HEAD^
 [core]
 	editor = vim
 	autocrlf = true
