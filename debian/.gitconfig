@@ -11,7 +11,8 @@
 	diff1 = diff HEAD^
 [core]
 	editor = vim
-	autocrlf = true
+	eol = lf
+	autocrlf = false
 [init]
 	defaultBranch = main
 [pull]
