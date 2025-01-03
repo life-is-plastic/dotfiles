@@ -6,7 +6,7 @@ alias ls='ls -l --group-directories-first --color=auto'
 alias rm='rm -i'
 
 alias g='git'
-alias gitconfig='vi ~/.gitconfig'
+alias gitconfig='git config --global --edit'
 
 rc() {
 	vi ~/.${1}rc
@@ -14,4 +14,13 @@ rc() {
 
 dev() {
 	cd ~/dev/${1}
+}
+
+did() {
+	local fp=~/did.txt
+	if [ $# -eq 0 ]; then
+		cat $fp
+	else
+		echo "[$(date '+%Y-%m')] $*" | tee -a $fp
+	fi
 }
