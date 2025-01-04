@@ -1,0 +1,14 @@
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[font]
+size = 14.0
+
+[window]
+dynamic_title = true
+opacity = 0.85
+
+[window.dimensions]
+columns = 100
+lines = 25
