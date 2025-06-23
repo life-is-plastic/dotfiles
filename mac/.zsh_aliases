@@ -1,0 +1,33 @@
+alias aliases='vim ~/.zsh_aliases'
+alias reload='. ~/.zshrc'
+
+alias ls='gls -Fl --group-directories-first --color=auto'
+alias rmi='\rm -i'
+
+alias g='git'
+alias gitconfig='git config --global --edit'
+
+rc() {
+	vim ~/.${1}rc
+}
+
+c() {
+	local directory=${1}
+	local subdir=${2}
+	case $directory in
+		dev)
+			cd ~/dev/$subdir
+			;;
+		*)
+			;;
+	esac
+}
+
+did() {
+	local fp=~/did.txt
+	if [ $# -eq 0 ]; then
+		cat $fp
+	else
+		echo "[$(date '+%Y-%m')] $*" | tee -a $fp
+	fi
+}
