@@ -1,0 +1,4 @@
+# Inspect sleep related state
+pmset -g
+pmset -g assertions
+pmset -g assertionslog
