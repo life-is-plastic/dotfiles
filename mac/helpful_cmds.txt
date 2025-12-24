@@ -2,3 +2,9 @@
 pmset -g
 pmset -g assertions
 pmset -g assertionslog
+
+# MacPorts stuff
+port installed requested  # list non-transitive installs
+sudo port uninstall --follow-dependencies <portname>  # uninstall transitive deps as well
+sudo port uninstall inactive  # do this before `uninstall leaves`
+sudo port uninstall leaves
