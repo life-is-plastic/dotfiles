@@ -1,3 +1,6 @@
+# Disable Gatekeeper
+sudo spctl --master-disable
+
 # Inspect sleep related state
 pmset -g
 pmset -g assertions
