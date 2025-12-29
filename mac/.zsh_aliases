@@ -4,6 +4,7 @@ alias reload='. ~/.zshrc'
 alias ls='gls -Fl --group-directories-first --color=auto'
 alias rmi='\rm -i'
 
+alias p='uv run python3'
 alias g='git'
 alias gitconfig='git config --global --edit'
 
