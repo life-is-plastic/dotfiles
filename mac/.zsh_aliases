@@ -1,15 +1,16 @@
-alias aliases='vim ~/.zsh_aliases'
 alias reload='. ~/.zshrc'
-
+alias profile='vim ~/.zshrc'
+alias aliases='vim ~/.zsh_aliases'
 alias ls='gls -Fl --group-directories-first --color=auto'
-alias rmi='\rm -i'
 
 alias p='uv run python3'
 alias g='git'
 alias gitconfig='git config --global --edit'
+alias pi='EDITOR=vim PI_OFFLINE=1 pi'
 
 mac_update() {
 	sudo port selfupdate
+	sudo port upgrade outdated
 	uv self update
 	rustup update
 }
@@ -17,10 +18,6 @@ mac_update() {
 mac_clean() {
 	sudo port uninstall inactive
 	sudo port uninstall leaves
-}
-
-rc() {
-	vim ~/.${1}rc
 }
 
 c() {
