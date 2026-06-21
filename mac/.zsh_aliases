@@ -11,8 +11,13 @@ alias pi='EDITOR=vim PI_OFFLINE=1 pi'
 mac_update() {
 	sudo port selfupdate
 	sudo port upgrade outdated
+
+	$(go env GOPATH)/bin/gup update
+
 	uv self update
+
 	rustup update
+	cargo-install-update install-update --all
 }
 
 mac_clean() {
