@@ -15,6 +15,7 @@ mac_update() {
 	$(go env GOPATH)/bin/gup update
 
 	uv self update
+	uv upgrade python
 
 	rustup update
 	cargo-install-update install-update --all
